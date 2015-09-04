@@ -1,0 +1,9 @@
+import java.util.Random;
+
+
+public class DieSimulator{
+  public static void main(String[] args){
+    Random rn = new Random();
+    System.out.println("The dice roll is: " + (rn.nextInt(6)+1))
+  }
+}

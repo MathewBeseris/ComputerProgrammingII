@@ -1,0 +1,11 @@
+import java.util.Random;
+
+public class Lottery(){
+  public static void main(String[] args){
+    Random rn = new Random();
+    String[] numbers = new String[5];
+    for(int i = 0; i<5; i++){
+      String[i] = rn.nextInt(49)+1;
+    }
+  }
+}
