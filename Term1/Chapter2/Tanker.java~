@@ -21,7 +21,12 @@ public class Tanker{
     System.out.println("On average, how many ounces of fluid do you consume per day?");
     float ounces = keyboard.nextFloat();
     
-    float gallons = ounces
-    float trucks = 
+    double gallons = ounces*.0078125;
+    double gallonsInLifetime = years*365*gallons;
+    double trucks = gallonsInLifetime/8000;
+    
+    System.out.println("It would take "+ trucks +" 8000 gallon trucks to contain the amount of fluids you would consume in your life");
+    
+    
   }
 }

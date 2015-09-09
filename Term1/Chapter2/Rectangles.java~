@@ -1,0 +1,7 @@
+import java.awt.Rectangle;
+
+public class Rectangles{
+  public static void main(String[] args){
+    
+  }
+}

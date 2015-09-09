@@ -21,6 +21,8 @@ public class Tanker{
     System.out.println("On average, how many ounces of fluid do you consume per day?");
     float ounces = keyboard.nextFloat();
     
+    //Day deathDay = userBirthDate.addDays(years*365);
+    
     double gallons = ounces*.0078125;
     double gallonsInLifetime = years*365*gallons;
     double trucks = gallonsInLifetime/8000;
