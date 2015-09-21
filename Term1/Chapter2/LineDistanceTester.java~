@@ -1,0 +1,34 @@
+
+
+/*P2.9*/
+public class LineDistanceTester{
+  public static void main(String[] args){
+    
+    JFrame frame = new JFrame();
+
+    frame.setSize(450, 500);
+    frame.setTitle("Points");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+    FourRectanglePrinter component = new FourRectanglePrinter();
+    frame.add(component);
+    
+    frame.setVisible(true);
+    
+    
+    
+    Line2D.Double line1 = new Line2D.Double(100,100,200,200);
+    Point2D.Double p1 = new Point2D.Double(100,200);
+    Point2D.Double p2 = new Point2D.Double(150,150);
+    Point2D.Double p3 = new Point2D.Double(250,50);
+    
+  }
+  
+  public void paintComponent(Graphics g){
+    Graphics2D g2 = (Graphics2D) g;
+    
+    
+    
+    
+  }
+}

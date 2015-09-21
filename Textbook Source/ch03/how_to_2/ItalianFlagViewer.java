@@ -1,18 +1,14 @@
 import javax.swing.JFrame;
 
-public class RectangleViewer
+public class ItalianFlagViewer
 {
    public static void main(String[] args)
    {
       JFrame frame = new JFrame();
-
-      frame.setSize(450, 500);
-      frame.setTitle("Days Until Family Birthdays");
+      frame.setSize(300, 400);
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-      RectangleComponent component = new RectangleComponent();
+      ItalianFlagComponent component = new ItalianFlagComponent();
       frame.add(component);
-
       frame.setVisible(true);
    }
 }

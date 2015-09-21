@@ -65,12 +65,33 @@ public class RectangleComponent extends JComponent
      g2.fill(box5);
      
      
-     //Draw grid lines
+     //Draw grid lines and scale
      g2.setColor(Color.BLACK);
      
-     Line2D.Double line1 = new Line2D.Double(50,365,50,0);
-     g2.draw(line1);
-     Line2D.Double line2 = new Line2D.Double(100,365,100,0);
-     g2.draw(line2);
+     for(int i = 365; i >= 50; i-=50){
+       Line2D.Double lines= new Line2D.Double(70,i,350,i);
+       g2.draw(lines);
+       g2.drawString(Integer.toString(365-i),45,i);
+     }
+     
+     Line2D.Double lines = new Line2D.Double(70,365,70,65);
+     g2.draw(lines);
+     Line2D.Double liner = new Line2D.Double(350,365,350,65);
+     g2.draw(liner);
+     
+     
+     //Labels and titles
+     g2.drawString("Ethan",80,382);
+     g2.drawString("Emily",130,382);
+     g2.drawString("Mathew",180,382);
+     g2.drawString("Alex",230,382);
+     g2.drawString("Wendi",280,382);
+     
+     g2.drawString("Family Members",150,420);
+     
+     g2.drawString("Days until",1,180);
+     g2.drawString("Birthday",1,195);
+     
+     g2.drawString("Days Until Family Birthdays",50,30);
    }
 }
