@@ -1,16 +1,17 @@
+//HIDE
 /**
    A bank account has a balance that can be changed by 
    deposits and withdrawals.
 */
 public class BankAccount
-{  
+{
    private double balance;
 
    /**
       Constructs a bank account with a zero balance.
    */
    public BankAccount()
-   {   
+   {
       balance = 0;
    }
 
@@ -19,7 +20,7 @@ public class BankAccount
       @param initialBalance the initial balance
    */
    public BankAccount(double initialBalance)
-   {   
+   {
       balance = initialBalance;
    }
 
@@ -28,7 +29,7 @@ public class BankAccount
       @param amount the amount to deposit
    */
    public void deposit(double amount)
-   {  
+   {
       balance = balance + amount;
    }
 
@@ -37,7 +38,7 @@ public class BankAccount
       @param amount the amount to withdraw
    */
    public void withdraw(double amount)
-   {   
+   {
       balance = balance - amount;
    }
 
@@ -46,11 +47,7 @@ public class BankAccount
       @return the current balance
    */
    public double getBalance()
-   {   
+   {
       return balance;
-   }
-   
-   public void addInterest(double rate){
-     balance = balance + rate*.01*balance;
    }
 }
