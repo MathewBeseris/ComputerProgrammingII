@@ -1,0 +1,7 @@
+public class RoachPopulation{
+  private double population;
+  
+  public RoachPopulation(double population){
+    this.population = population;
+  }
+}

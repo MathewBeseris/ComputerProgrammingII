@@ -1,0 +1,14 @@
+
+
+public class Bug{
+  
+  int position;
+  boolean direction;
+  
+  public Bug(position){
+    this.position = position;
+    direction = 1;
+  }
+  
+  public
+}
