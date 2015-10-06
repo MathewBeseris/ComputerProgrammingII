@@ -1,0 +1,16 @@
+
+
+public class Equations{
+  public static void main(String[] args){
+    
+    double s0 = 0;
+    double v0 = 0;
+    final double g = 9.81
+    double t = 0;  
+      
+      
+      
+    double s = s0 + v0
+    
+  }
+}
