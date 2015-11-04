@@ -7,8 +7,7 @@ public class ChangeMaker{
     Scanner keyboard = new Scanner(System.in);
     
     int twenty = 0, ten = 0, five = 0, one = 0, quarter = 0, dime = 0, nickel = 0, penny = 0;
-    
-    
+    System.out.printf("%5.2E", -123.0);
     
     System.out.println("Enter Cost:");
     double cost = keyboard.nextDouble();
