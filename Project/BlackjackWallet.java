@@ -1,0 +1,3 @@
+class BlackJackWallet extends Blackjack{
+	
+}

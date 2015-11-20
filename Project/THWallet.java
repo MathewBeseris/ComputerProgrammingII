@@ -1,0 +1,3 @@
+class THWallet extends Blackjack{
+	
+}

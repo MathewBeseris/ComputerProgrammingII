@@ -1,0 +1,3 @@
+class BlackjackTableMoney extends BlackJack{
+	
+}
