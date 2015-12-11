@@ -18,7 +18,8 @@ public class RectangleFrame2 extends JFrame
       {  
          int x = event.getX();
          int y = event.getY();
-         scene.moveRectangleTo(x, y);
+         //scene.moveRectangleTo(x, y);
+         scene.createRectangle(x, y);
       }
 
       // Do-nothing methods

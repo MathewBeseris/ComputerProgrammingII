@@ -2,6 +2,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
+import java.util.*;
 
 /**
    This component displays a rectangle that can be moved. 
@@ -15,16 +16,30 @@ public class RectangleComponent2 extends JComponent
 
    private Rectangle box;
 
+   private ArrayList<Rectangle> boxes;
+
+   
+   public void createRectangle(int mousex, int mousey){
+      
+      boxes.add(new Rectangle(mousex, mousey ,BOX_WIDTH, BOX_HEIGHT));
+      repaint();
+   }
+
    public RectangleComponent2()
    {  
-      // The rectangle that the paintComponent method draws 
-      box = new Rectangle(BOX_X, BOX_Y, BOX_WIDTH, BOX_HEIGHT);         
+       boxes = new ArrayList<Rectangle>();
+           
    }
 
    public void paintComponent(Graphics g)
    {  
       Graphics2D g2 = (Graphics2D) g;
-      g2.draw(box);
+      
+      if(boxes.size()>0){
+         for(int i = 0; i < boxes.size(); i++){
+            g2.draw(boxes.get(i));
+         }
+      }
    }
 
    /**
